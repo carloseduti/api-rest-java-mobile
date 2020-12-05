@@ -6,4 +6,6 @@ import com.barberia.apirest.model.Cliente;
 
 public interface ClienteRepository extends JpaRepository<Cliente, Long> {
 	Cliente findById(long id);
+	
+	Cliente deleteById(long id);
 }

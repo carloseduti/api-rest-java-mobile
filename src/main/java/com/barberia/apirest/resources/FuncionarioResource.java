@@ -49,4 +49,9 @@ public class FuncionarioResource {
 		funcionarioRepository.delete(funcionario);
 	}
 	
+	@DeleteMapping("/funcionario/{id}")
+	public void deleteClienteById(@PathVariable(value = "id") long id){
+		funcionarioRepository.deleteById(id);
+	}
+	
 }
